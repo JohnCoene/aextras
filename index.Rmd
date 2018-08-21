@@ -1,0 +1,26 @@
+# aextras
+
+Extras for [aframer](https://aframer.john-coene.com/).
+
+## Installation
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("JohnCoene/aextras")
+```
+
+## Example
+
+```{r}
+library(aframer)
+library(aextras)
+
+embed_aframe(
+  a_scene(
+    a_ocean(
+      width="50", depth="50", density="40"
+    )
+  )
+)
+```
+
