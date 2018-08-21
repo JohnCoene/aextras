@@ -3,3 +3,4 @@
 pkgdown
 index.Rmd
 ^LICENSE\.md$
+docs
