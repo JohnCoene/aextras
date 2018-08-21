@@ -2,9 +2,18 @@
 % Please edit documentation in R/primitives.R
 \name{a_ocean}
 \alias{a_ocean}
+\alias{a_grid}
+\alias{a_tube}
+\alias{a_hexmap}
 \title{Primitives}
 \usage{
 a_ocean(..., cdn = FALSE, version = "0.8.0")
+
+a_grid(..., cdn = FALSE, version = "0.8.0")
+
+a_tube(..., cdn = FALSE, version = "0.8.0")
+
+a_hexmap(..., cdn = FALSE, version = "0.8.0")
 }
 \arguments{
 \item{...}{Any aframer element or named options.}
