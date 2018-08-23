@@ -68,3 +68,16 @@ a_hexmap <- function(..., cdn = FALSE, version = "0.8.0"){
     )
   )
 }
+
+#' @rdname primitives
+#' @export
+a_animation <- function(..., cdn = FALSE, version = "0.8.0"){
+  aframer::a_primitive(
+    "animation",
+    list(
+      ...,
+      aframer::a_dependency(cdn = cdn, version = version),
+      aextras_dependency(cdn)
+    )
+  )
+}
