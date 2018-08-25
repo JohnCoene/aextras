@@ -130,15 +130,15 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>a_ocean</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.0"</span>)
+    <pre class="usage"><span class='fu'>a_ocean</span>(<span class='no'>...</span>)
 
-<span class='fu'>a_grid</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.0"</span>)
+<span class='fu'>a_grid</span>(<span class='no'>...</span>)
 
-<span class='fu'>a_tube</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.0"</span>)
+<span class='fu'>a_tube</span>(<span class='no'>...</span>)
 
-<span class='fu'>a_hexmap</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.0"</span>)
+<span class='fu'>a_hexmap</span>(<span class='no'>...</span>)
 
-<span class='fu'>a_animation</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.0"</span>)</pre>
+<span class='fu'>a_animation</span>(<span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -147,15 +147,11 @@
       <th>...</th>
       <td><p>Any aframer element or named options.</p></td>
     </tr>
-    <tr>
-      <th>cdn</th>
-      <td><p>Whether to use local or CDN files.</p></td>
-    </tr>
-    <tr>
-      <th>version</th>
-      <td><p>Passed to <a href='http://www.rdocumentation.org/packages/aframer/topics/scene'>a_dependency</a>.</p></td>
-    </tr>
     </table>
+    
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    <p>Require dependency, see <code><a href='aextras_dependency.html'>aextras_dependency</a></code>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -163,6 +159,8 @@
 
 <span class='fu'><a href='http://www.rdocumentation.org/packages/aframer/topics/view'>browse_aframe</a></span>(
   <span class='fu'><a href='http://www.rdocumentation.org/packages/aframer/topics/scene'>a_scene</a></span>(
+    <span class='fu'><a href='http://www.rdocumentation.org/packages/aframer/topics/scene'>a_dependency</a></span>(),
+    <span class='fu'><a href='aextras_dependency.html'>aextras_dependency</a></span>(),
     <span class='fu'>a_ocean</span>(
       <span class='kw'>width</span><span class='kw'>=</span><span class='st'>"50"</span>, <span class='kw'>depth</span><span class='kw'>=</span><span class='st'>"50"</span>, <span class='kw'>density</span><span class='kw'>=</span><span class='st'>"40"</span>
     )
@@ -173,7 +171,9 @@
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-            
+      
+      <li><a href="#note">Note</a></li>
+      
       <li><a href="#examples">Examples</a></li>
     </ul>
 

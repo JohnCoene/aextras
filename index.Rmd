@@ -17,6 +17,8 @@ library(aextras)
 
 embed_aframe(
   a_scene(
+    a_dependency(),
+    aextras_dependency(),
     a_ocean(
       width="50", depth="50", density="40"
     )
