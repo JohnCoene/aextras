@@ -9,6 +9,7 @@
 #'
 #' browse_aframe(
 #'   a_scene(
+#'     a_dependency(cdn = TRUE),
 #'     aextras_dependency(cdn = TRUE)
 #'   )
 #' )

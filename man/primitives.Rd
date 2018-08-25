@@ -8,31 +8,32 @@
 \alias{a_animation}
 \title{Primitives}
 \usage{
-a_ocean(..., cdn = FALSE, version = "0.8.0")
+a_ocean(...)
 
-a_grid(..., cdn = FALSE, version = "0.8.0")
+a_grid(...)
 
-a_tube(..., cdn = FALSE, version = "0.8.0")
+a_tube(...)
 
-a_hexmap(..., cdn = FALSE, version = "0.8.0")
+a_hexmap(...)
 
-a_animation(..., cdn = FALSE, version = "0.8.0")
+a_animation(...)
 }
 \arguments{
 \item{...}{Any aframer element or named options.}
-
-\item{cdn}{Whether to use local or CDN files.}
-
-\item{version}{Passed to \link[aframer]{a_dependency}.}
 }
 \description{
 Extra primitives.
+}
+\note{
+Require dependency, see \code{\link{aextras_dependency}}.
 }
 \examples{
 library(aframer)
 
 browse_aframe(
   a_scene(
+    a_dependency(),
+    aextras_dependency(),
     a_ocean(
       width="50", depth="50", density="40"
     )
