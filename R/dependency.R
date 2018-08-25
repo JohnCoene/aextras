@@ -14,6 +14,7 @@
 #'   )
 #' )
 #'
+#' @rdname dep
 #' @export
 aextras_dependency <- function(cdn = FALSE){
   .get_dependency(
@@ -21,3 +22,7 @@ aextras_dependency <- function(cdn = FALSE){
     cdn = cdn
   )
 }
+
+#' @rdname dep
+#' @export
+aextras_dep <- aextras_dependency

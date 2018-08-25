@@ -2,9 +2,12 @@
 % Please edit documentation in R/dependency.R
 \name{aextras_dependency}
 \alias{aextras_dependency}
+\alias{aextras_dep}
 \title{Dependency}
 \usage{
 aextras_dependency(cdn = FALSE)
+
+aextras_dep(cdn = FALSE)
 }
 \arguments{
 \item{cdn}{Whether to use local or CDN files.}
